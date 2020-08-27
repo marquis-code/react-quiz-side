@@ -1,0 +1,89 @@
+/* removing number input spinner */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #292F33;
+    border: none;
+    color: $white;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    outline: none;
+    height: 13%;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* .button {
+    border-radius: $button-radius;
+    background-color: blue;
+}
+
+.input-requirement {
+    display: none;
+    font-family: $quicksand;
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+.inputDiv:hover .input-requirement {
+    display: block;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+ */
+
+.input-field .prefix.active {
+    color: #000;
+}
